@@ -1,24 +1,26 @@
+/*
+ * @Author: your name
+ * @Date: 2020-08-30 00:58:41
+ * @LastEditTime: 2020-08-30 14:48:50
+ * @LastEditors: Please set LastEditors
+ * @Description: In User Settings Edit
+ * @FilePath: \react-template\src\App.js
+ */
 import React from 'react';
-import logo from './logo.svg';
+import { HashRouter, Route, Switch } from 'react-router-dom';
+
 import './App.css';
+import Index from './routes/index/Index';
+
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <HashRouter>
+        <Switch>
+          <Route path="/" component={Index} />
+        </Switch>
+      </HashRouter>
     </div>
   );
 }
