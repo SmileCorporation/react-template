@@ -1,7 +1,7 @@
 /*
  * @Author: 曹信坤
  * @Date: 2020-08-30 15:10:55
- * @LastEditTime: 2020-09-22 23:45:50
+ * @LastEditTime: 2020-09-28 21:00:46
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: \react-template\src\routes\header\index.js
@@ -9,13 +9,13 @@
 
 import React, { Component } from "react";
 import './index.css'
-import { Carousel, Form } from 'antd';
+import { Carousel } from 'antd';
 import aboutOne from '../../../asserts/aboutOne.png'
 import aboutTwo from '../../../asserts/aboutTwo.png'
 import aboutThree from '../../../asserts/aboutThree.png'
 import aboutFour from '../../../asserts/aboutFour.png'
 
-@Form.create({ fieldNameProp: null })
+
 export default class titContent extends Component {
     getCooperation(index) {
         const data = [];
